@@ -17,7 +17,7 @@ function generateQrCode() {
 
   qrCodeImg.addEventListener("load", () => {
     container.classList.add("active");
-    qrCodeBtn.innerText = "Código criado";
+    qrCodeBtn.innerText = "Código criado!";
   });
 
 
@@ -36,6 +36,6 @@ qrCodeInput.addEventListener("keydown", (e) => {
 qrCodeInput.addEventListener('keyup', () => {
     if(!qrCodeInput.value) {
         container.classList.remove("active")
-        qrCodeBtn.innerHTML = "Gerar QR Code!"
+        qrCodeBtn.innerHTML = "Gerar QR Code"
     }
 })
